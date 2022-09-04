@@ -1,0 +1,28 @@
+package project1.pgm1;
+
+import org.bouncycastle.jcajce.provider.asymmetric.rsa.ISOSignatureSpi;
+
+public class Fibanoci {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int input=11;
+		int firstNum=0;
+		int secondNum=1;
+		int result=0;
+		int count=3;
+		System.out.print("Fibanoci Series for 11 : " +"\n"+ firstNum+ " "+ secondNum+" ");
+		while(count<input)
+		{
+			
+		result=firstNum +secondNum ;
+		firstNum=secondNum;
+		secondNum=result;
+		System.out.print(result + " ");
+		count++;
+			
+		}
+
+	}
+
+}
